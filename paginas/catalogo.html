@@ -1,0 +1,237 @@
+<?php 
+session_start(); 
+?>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo Burton - Burton Factory</title>
+    <link rel="stylesheet" href="../assets/css/estilos.css">
+</head>
+<body>
+
+<div class="crew-container catalogo-container">
+
+    
+    <div class="crew-header">
+        <a href="home.php">
+            <img src="../assets/img/logo.png" alt="Burton Factory Logo" class="crew-logo">
+        </a>
+        <h2 class="crew-title">CATÁLOGO BURTON</h2>
+    </div>
+
+   <p class="section-intro">
+    Donde el estilo se forja con actitud y cada servicio combina la precisión de un relojero con la creatividad de un artista.
+</p>
+
+    
+    <div class="seccion-catalogo">
+        <h3 class="catalogo-titulo">CORTE</h3>
+
+        <p class="catalogo-descripcion">
+            Corte profesional con lavado y asesoramiento adaptado a la longitud del cabello.
+        </p>
+
+        <p class="catalogo-profesional">
+            Emma Pettigrew ofrece asesoramiento personalizado, lavado, masaje capilar,
+            acondicionador hidratante, corte, secado natural y producto de acabado.
+        </p>
+
+        <table class="tabla-servicios">
+            <tr>
+                <th>Tipo</th>
+                <th>Tiempo</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td>Corto</td>
+                <td>20 min</td>
+                <td>30€</td>
+            </tr>
+            <tr>
+                <td>Medio</td>
+                <td>30 min</td>
+                <td>45€</td>
+            </tr>
+            <tr>
+                <td>Largo</td>
+                <td>45 min</td>
+                <td>60€</td>
+            </tr>
+        </table>
+
+        <div class="catalogo-reserva">
+    <a href="reservar.php?categoria=corte" class="btn-burton">RESERVAR CITA</a>
+</div>
+    </div>
+
+  
+    <div class="seccion-catalogo">
+        <h3 class="catalogo-titulo">COLOR</h3>
+
+        <p class="catalogo-descripcion">
+            Servicio integral de color con tecnología avanzada y cuidado capilar.
+        </p>
+
+        <p class="catalogo-profesional">
+            Servicio personalizado adaptado a la base natural y al estilo deseado.
+            Incluye tinte tradicional, mechas y matices que aportan profundidad
+            y luminosidad. De la mano de S. Cutterwald.
+        </p>
+
+        <table class="tabla-servicios">
+            <tr>
+                <th>Servicio</th>
+                <th>Tiempo</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td>Matiz</td>
+                <td>30 min</td>
+                <td>30€</td>
+            </tr>
+            <tr>
+                <td>Mechas</td>
+                <td>60 min</td>
+                <td>45€</td>
+            </tr>
+            <tr>
+                <td>Tinte</td>
+                <td>90 min</td>
+                <td>70€</td>
+            </tr>
+        </table>
+
+        <div class="catalogo-reserva">
+    <a href="reservar.php?categoria=color" class="btn-burton">RESERVAR CITA</a>
+</div>
+    </div>
+
+   
+    <div class="seccion-catalogo">
+        <h3 class="catalogo-titulo">PEINADOS</h3>
+
+        <p class="catalogo-descripcion">
+            Peinados y estilismos adaptados a cada momento.
+        </p>
+
+        <p class="catalogo-profesional">
+            Maisie Holloway lidera esta área con creatividad y precisión.
+            Incluye peinados personalizados, recogidos y servicio especial para novias.
+        </p>
+
+        <table class="tabla-servicios">
+            <tr>
+                <th>Servicio</th>
+                <th>Tiempo</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td>Suplemento tenacillas/plancha</td>
+                <td>45 min</td>
+                <td>45€</td>
+            </tr>
+            <tr>
+                <td>Recogido</td>
+                <td>90 min</td>
+                <td>70€</td>
+            </tr>
+            <tr>
+                <td>Novias</td>
+                <td>120 min</td>
+                <td>110€</td>
+            </tr>
+        </table>
+
+        <div class="catalogo-reserva">
+    <a href="reservar.php?categoria=peinados" class="btn-burton">RESERVAR CITA</a>
+</div>
+    </div>
+
+    
+    <div class="seccion-catalogo">
+        <h3 class="catalogo-titulo">TRATAMIENTOS</h3>
+
+        <p class="catalogo-descripcion">
+            Tratamientos capilares con fórmulas naturales y diagnóstico personalizado.
+        </p>
+
+        <p class="catalogo-profesional">
+            Área a cargo de Fiona Shelby, especialista en recuperación capilar.
+            Incluye hidratación profunda, reconstrucción y estudio personalizado.
+        </p>
+
+        <table class="tabla-servicios">
+            <tr>
+                <th>Servicio</th>
+                <th>Tiempo</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td>Hidratación</td>
+                <td>30 min</td>
+                <td>40€</td>
+            </tr>
+            <tr>
+                <td>Reconstrucción</td>
+                <td>60 min</td>
+                <td>55€</td>
+            </tr>
+            <tr>
+                <td>Estudio personalizado</td>
+                <td>90 min</td>
+                <td>75€</td>
+            </tr>
+        </table>
+
+        <div class="catalogo-reserva">
+    <a href="reservar.php?categoria=tratamientos" class="btn-burton">RESERVAR CITA</a>
+</div>
+    </div>
+
+   
+    <div class="seccion-catalogo">
+        <h3 class="catalogo-titulo">BARBERÍA</h3>
+
+        <p class="catalogo-descripcion">
+            Cortes, barba y afeitados para un acabado impecable.
+        </p>
+
+        <p class="catalogo-profesional">
+            Rud Monroe lidera la barbería con cortes clásicos,
+            arreglo de barba y afeitado tradicional con navaja, un ritual clásico que todo cliente debería probar.
+        </p>
+
+        <table class="tabla-servicios">
+            <tr>
+                <th>Servicio</th>
+                <th>Tiempo</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td>Corte de pelo</td>
+                <td>30 min</td>
+                <td>30€</td>
+            </tr>
+            <tr>
+                <td>Arreglo de barba</td>
+                <td>30 min</td>
+                <td>20€</td>
+            </tr>
+            <tr>
+                <td>Afeitado con navaja</td>
+                <td>45 min</td>
+                <td>25€</td>
+            </tr>
+        </table>
+
+        <div class="catalogo-reserva">
+    <a href="reservar.php?categoria=barbería" class="btn-burton">RESERVAR CITA</a>
+</div>
+    </div>
+
+</div>
+
+</body>
+</html>
