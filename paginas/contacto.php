@@ -5,9 +5,15 @@ session_start();
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <meta charset="UTF-8">
     <title>CONTACTO</title>
+
     <link rel="stylesheet" href="../assets/css/estilos.css">
+
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
 
@@ -27,6 +33,7 @@ session_start();
     </p>
 
 </section>
+
 
 
 <section class="contact-container">
@@ -69,5 +76,6 @@ session_start();
 
 </section>
 
+<?php include("../paginas/footer.php"); ?>
 </body>
 </html>

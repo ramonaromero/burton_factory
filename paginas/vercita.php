@@ -41,6 +41,7 @@ $estado = $cita_base['estado'];
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">    
 <meta charset="UTF-8">
 <title>Tu cita - Burton Factory</title>
 <link rel="stylesheet" href="../assets/css/estilos.css">
@@ -120,6 +121,6 @@ $estado = $cita_base['estado'];
 </section>
 
 </div>
-
+<?php include("../paginas/footer.php"); ?>
 </body>
 </html>

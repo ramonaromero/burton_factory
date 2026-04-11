@@ -43,7 +43,7 @@ session_start();
 
         <div class="hero-links">
             <a href="burton_crew.php">BURTON CREW</a>
-            <a href="catalogo.html">CATÁLOGO</a>
+            <a href="catalogo.php">CATÁLOGO</a>
             <a href="boletinburtoniano.php">BOLETÍN</a>
             <a href="contacto.php">CONTACTO</a>
         </div>
@@ -111,20 +111,22 @@ session_start();
        
         <div class="footer-left">
             <div class="footer-logo">
+                <a href="#">
                 <img src="../assets/img/logo.png" alt="Logo Burton Factory">
+                </a>
             </div>
 
             <div class="footer-social-vertical">
                 <a href="https://www.instagram.com/burtonfactory" class="btn-burton social-btn"><i class="fab fa-instagram"></i></a>
                 <a href="https://wa.me/34617899308" class="btn-burton social-btn"><i class="fab fa-whatsapp"></i></a>
-                <a href="#" class="btn-burton social-btn"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/ramonaromero/burton_factory" class="btn-burton social-btn"><i class="fab fa-github"></i></a>
             </div>
         </div>
 
       
         <div class="footer-links">
             <a href="burton_crew.php">BURTON CREW</a>
-            <a href="catalogo.html">CATÁLOGO</a>
+            <a href="catalogo.php">CATÁLOGO</a>
             <a href="boletinburtoniano.php">BOLETÍN</a>
             <a href="contacto.php">CONTACTO</a>
         </div>

@@ -228,6 +228,7 @@ $datos = $articulos[$seccion];
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <meta charset="UTF-8">
 <title><?php echo $datos['titulo_seccion']; ?></title>
 <link rel="stylesheet" href="../assets/css/estilos.css">
@@ -271,6 +272,6 @@ $datos = $articulos[$seccion];
 <?php endforeach; ?>
 
 </section>
-
+<?php include("../paginas/footer.php"); ?>
 </body>
 </html>
