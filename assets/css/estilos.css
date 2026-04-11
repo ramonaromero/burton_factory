@@ -30,7 +30,6 @@ body {
     padding: 0 20px;
 }
 
-/* HOME */
 
 .header-home {
     display: flex;
@@ -45,7 +44,6 @@ body {
     gap: 14px;
 }
 
-/* BOTÓN BURTON */
 
 .btn-burton,
 .btn-burton:link,
@@ -71,8 +69,6 @@ body {
     box-shadow: 0 0 12px rgba(197,160,89,0.4);
     transform: translateY(-2px);
 }
-
-/* HERO */
 
 .hero {
     background-color: var(--gris-placa);
@@ -109,7 +105,6 @@ body {
     letter-spacing: 4px;
 }
 
-
 .hero::before {
     content: "";
     position: absolute;
@@ -126,8 +121,6 @@ body {
         transparent
     );
 }
-
-/* ENLACES HERO */
 
 .hero-links {
     position: absolute;
@@ -152,8 +145,6 @@ body {
     text-shadow: 0 0 8px rgba(197,160,89,0.6);
 }
 
-
-/* ENTRADILLA */
 
 .section-intro {
     font-family: 'Special Elite', cursive;
@@ -343,8 +334,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 
-/* MENSAJES BURTON */
-
 .alerta-exito {
     max-width: 800px;
     margin: 25px auto;
@@ -382,8 +371,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     opacity: 1;
 }
 
-
-/* HISTORIA BURTON: HOME */
 
 .historia-burton {
     background-color: var(--gris-placa);
@@ -455,7 +442,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     letter-spacing: 1px;
 }
 
-/* MAPA */
 
 .mapa-burton {
     background-color: var(--gris-placa);
@@ -513,7 +499,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-top: 25px;
 }
 
-/* FOOTER */
 
 .footer-burton {
     background-color: var(--gris-placa);
@@ -550,7 +535,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-size: 8px;
 }
 
-
 .footer-links {
     display: flex;
     flex-direction: column;
@@ -569,7 +553,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .footer-links a:hover {
     opacity: 0.7;
 }
-
 
 .footer-newsletter form {
     display: flex;
@@ -591,7 +574,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .footer-newsletter input:focus {
     box-shadow: 0 0 10px rgba (197,160,89, 0.4);
-
 }
 
 .footer-newsletter input::placeholder {
@@ -603,7 +585,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     padding: 8px 24px;
     font-size: 18px;
 }
-
 
 .footer-linea {
     margin: 0px auto 15px auto;
@@ -619,7 +600,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     
 }
 
-/* TEXTOS LEGALES */
 
 .footer-legal {
     text-align: center;
@@ -636,7 +616,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .footer-legal a:hover {
     color: var(--dorado-base);
 }
-
 
 .legal-content {
     max-width: 1100px;
@@ -671,8 +650,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-top: 40px;
 }
 
-/* ===== TÍTULO BURTON ===== */
-
 .titulo-burton {
 
     font-family: 'Special Elite', cursive;
@@ -682,8 +659,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     text-align: center;
     margin-top: -140px;
 }
-
-/* CATÁLOGO */
 
 .seccion-catalogo,
 .crew-card {
@@ -740,8 +715,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .tabla-servicios td {
     padding: 14px 18px;  
 }
-
-/* BURTON CREW */
 
 .crew-page .page-wrapper {
     margin-top: 20px;
@@ -843,8 +816,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     color: var(--dorado-base);
 }
 
-/* BOLETÍN BURTONIANO */
-
 .boletin-secciones {
     display: flex;
     flex-direction: column;
@@ -895,7 +866,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     grid-template-columns: repeat(2, 340px);
     justify-content: center;
 }
-
 
 .boletin-card {
     border-radius: 8px;
@@ -1057,7 +1027,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     letter-spacing: 1px;
 }
 
-
 .login-form label {
     color: var(--dorado-base);
     font-weight: 600;
@@ -1091,8 +1060,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     align-self: center;   
 }
 
-/* MENSAJE DE ERROR */
-
 .alerta {
     background-color: #891A1A;
     border: 1px solid rgba(197,160,89,0.4);
@@ -1125,7 +1092,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     text-decoration: underline;
 }
 
-
 .login-box {
     transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
@@ -1135,9 +1101,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     box-shadow: 0 12px 30px rgba(0,0,0,0.6),
                 0 0 12px rgba(197,160,89,0.25); 
 }
-
-
-/* CONTACTO */
 
 .contact-form {
     max-width: 700px;
@@ -1193,7 +1156,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     position: relative;
     transition: all 0.3s ease;
 }
-
 
 .contact-container::before {
     content: "";

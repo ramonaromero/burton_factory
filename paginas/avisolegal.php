@@ -28,7 +28,6 @@
             Normativa y funcionamiento de la fábrica.
         </p>
 
-    <!-- CONTENIDO -->
     <div class="legal-content">
 
         <p>
@@ -64,8 +63,6 @@ Internet, o bien si se utiliza su dominio en relación con una actividad ilegal,
 <p>Burton Factory realiza los máximos esfuerzos para evitar errores en los contenidos que se publican en el sitio web. Todos los contenidos se encuentran actualizados, 
     reservándose Burton Factory la facultad de poder modificarlos en cualquier momento. Burton Factory no se responsabiliza de las consecuencias que puedan derivarse de los 
     errores en los contenidos proporcionados por terceros que puedan aparecer en este sitio web.</p>
- 
- 
  
 <strong>4. Limitación de responsabilidad</strong>
 <p>Burton Factory no asumirá ninguna responsabilidad derivada, a título enunciativo, pero no limitativo, de:</p>
@@ -112,7 +109,7 @@ el Sitio Web como seguro cuando aparezca el icono de un candado al final del Sit
 <p>Los términos y condiciones que rigen este sitio web, así como las relaciones que pudieran derivarse están protegidas y quedan sujetas a la legislación española.</p>
 
         </p>
-     <!-- BOTÓN VOLVER -->
+
         <div class="legal-boton">
             <a href="home.php" class="btn-burton">VOLVER A LA FÁBRICA</a>
         </div>

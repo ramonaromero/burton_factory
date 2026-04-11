@@ -87,9 +87,7 @@ de las que nuestra web no es titular (ej.: plataformas de gestión de publicidad
 cookies que se describen a continuación, excepto en la medida en que haya modificado la configuración de su navegador para rechazar la utilización de las mismas y/o haya configurado 
 el Pop-Up de este sitio web para rechazar o aceptar expresamente la instalación de determinados tipos de cookies.</p>
 
-        
 
-        <!-- BOTÓN VOLVER -->
         <div class="legal-boton">
             <a href="home.php" class="btn-burton">VOLVER AL SISTEMA</a>
         </div>

@@ -14,7 +14,6 @@ session_start();
 
 <div class="main-wrapper">
 
-    
     <section class="crew-section">
 
         <div class="crew-header">
@@ -29,9 +28,7 @@ session_start();
         </p>
 
     </section>
-
-
-    
+  
     <div class="page-wrapper">
 
         

@@ -1,7 +1,7 @@
 <?php
 include("../config/conexion.php");
 
-// Datos del formulario
+
 $id_servicio = $_POST['id_servicio'];
 $id_estilista = $_POST['id_estilista'];
 $fecha = $_POST['fecha'];

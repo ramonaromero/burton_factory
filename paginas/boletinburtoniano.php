@@ -28,8 +28,6 @@ session_start();
 </section>
 
 
-
-
 <section class="boletin-secciones">
 
   
