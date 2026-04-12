@@ -98,7 +98,7 @@ session_start();
     <div class="mapa-boton">
         <a href="https://www.google.com/maps/dir/?api=1&destination=Calle+Plateria+Murcia"
        target="_blank"
-       class="btn-burton">
+       class="btn-burton">CÓMO LLEGAR
        
     </a>
     </div>

@@ -62,7 +62,7 @@ $estado = $cita_base['estado'];
     </div>
 
     <p class="section-intro">
-        Aquí puedes consultar el estado de tu creación.
+        Todo listo para tu paso por el taller de mantenimiento. 
     </p>
 
 </section>
@@ -73,7 +73,9 @@ $estado = $cita_base['estado'];
 <div class="resumen-cita">
 
     <p><strong>Fecha:</strong> <?= $fecha_formateada ?></p>
-    <p><strong>Hora:</strong> <?= $cita_base['hora'] ?></p>
+    <?php $hora_formateada = date("H:i", strtotime($cita_base['hora'])); ?>
+    <strong>Hora:</strong> <?= $hora_formateada ?></p>
+    
 
     <p><strong>Estado:</strong> 
         <?= $estado == 'cancelada' ? 'Cancelada' : 'Confirmada' ?>

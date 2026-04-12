@@ -189,9 +189,6 @@ body {
      line-height: 1;
 }
 
-/* RESERVAR */
-
-/* CONTENEDOR DE CATEGORÍA */
 .categoria-box {
     background: var(--gris-placa);
     padding: 25px;
@@ -333,7 +330,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     overflow: visible !important;
 }
 
-
 .alerta-exito {
     max-width: 800px;
     margin: 25px auto;
@@ -441,6 +437,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     text-align: center;
     letter-spacing: 1px;
 }
+
 
 
 .mapa-burton {
