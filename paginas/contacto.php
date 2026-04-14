@@ -43,6 +43,9 @@ session_start();
             Mensaje enviado correctamente.
         </p>
     <?php endif; ?>
+  <div class="gear-container">
+    <img src="../assets/img/engranaje3.png" class="gear-img">
+    </div>
 
     <form class="contact-form" method="POST" action="../acciones/enviar_contacto.php">
 

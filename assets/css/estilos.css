@@ -438,8 +438,31 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     letter-spacing: 1px;
 }
 
+@media (max-width: 768px) {
 
+    .historia-contenido {
+        grid-template-columns: 1fr 120px; 
+        gap: 20px;
+    }
 
+    .historia-col {
+        grid-column: 1;
+    }
+
+    .historia-img {
+        position: static; 
+        grid-column: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .historia-img img {
+        width: 100%;
+        height: auto;
+        max-width: 120px;
+    }
+}
 .mapa-burton {
     background-color: var(--gris-placa);
     margin: 10px auto;
@@ -824,7 +847,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding: 40px 35px; /* un poco menos de padding */
+    padding: 40px 35px; 
     border-radius: 8px;
 }
 
@@ -1010,7 +1033,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     opacity: 0.4;
 }
 
-/* FORMULARIO */
 .login-form {
     width: 100%;                
     display: flex;
@@ -1050,7 +1072,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     outline: none;
     box-shadow: 0 0 8px rgba(197,160,89,0.4);
 }
-
 
 .login-form .btn-burton {
     margin-top: 25px;
@@ -1181,6 +1202,38 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .contact-container .contact-form {
     margin-top: 40px;
+}
+
+.gear-container {
+    position: absolute;
+    top: 20px;
+    right: 20px; 
+}
+
+.gear {
+    font-size: 60px;
+    color: #C5A059;
+    display: flex;
+    justify-content: flex-end; 
+    animation: girar 4s linear infinite;
+    
+}
+
+.gear-img {
+    width: 225px;
+    animation: girar 8s linear infinite;
+    display: block;
+    opacity: 0.9;
+    filter: sepia (60%) contrast(120%);
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .resumen-cita p {

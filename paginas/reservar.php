@@ -237,22 +237,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 </section> 
     
-<?php if (isset($error)): ?>
-    <p class="alerta"><?= $error ?></p>
-<?php endif; ?>
-
-</section>
-
 <section class="login-container">
 <div class="login-box">
 
+<?php if (isset($error)): ?>
+    <div class="alerta"><?= $error ?></div>
+<?php endif; ?>
 
 <?php if (isset($_GET['ok'])): ?>
-        <p class="alerta-exito">
-            Tu cita ha sido ensamblada<br>
-            El proceso creativo ya está en marcha
-        </p>
-    <?php endif; ?>
+    <p class="alerta-exito">
+        Tu cita ha sido ensamblada<br>
+        El proceso creativo ya está en marcha
+    </p>
+<?php endif; ?>
 
 <form method="POST">
 
