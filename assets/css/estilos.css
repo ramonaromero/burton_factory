@@ -122,6 +122,7 @@ body {
     );
 }
 
+
 .hero-links {
     position: absolute;
     bottom: 35px;
@@ -154,6 +155,32 @@ body {
     max-width: 850px;
     margin: 0 auto 40px auto;
     line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+
+    .hero-top {
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        gap: 20px; 
+        text-align: left; 
+        margin-bottom: 25px;
+    }
+
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+
+    .hero h2 {
+        margin-top: 30px;
+        text-align: left; 
+        max-width: 460px;
+        margin: 10px auto 0 auto;
+    }
+
 }
 
 .header-home {
@@ -398,9 +425,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .historia-contenido {
     display: grid;
-    grid-template-columns: 1fr 1fr 260px;
+    grid-template-columns: 1fr 1fr;
     gap: 40px;
-    align-items: start;
+    padding-right: 220px; 
 }
 
 .historia-col p {
@@ -411,22 +438,21 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .historia-img {
-    grid-column: 3;
     position: absolute;
-    top: 0;
-    right: 0;
-    height: 110%;
+    top: 20px;
+    right: 0px;   
+    height: auto;
+    transform: translateX(50px); 
     display: flex;
     justify-content: flex-end;
-    transform: translateX(110px);
 }
 
 .historia-img img {
     width: auto;
-    height: 65%;
+    height: auto;
+    max-width: 700px; 
     object-fit: contain;
     border-radius: 10px;
-    
 }
 
 .historia-final {
@@ -438,11 +464,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     letter-spacing: 1px;
 }
 
+
 @media (max-width: 768px) {
 
     .historia-contenido {
-        grid-template-columns: 1fr 120px; 
-        gap: 20px;
+        display: grid;
+        grid-template-columns: 1fr 220px; 
+        gap: 15px;
+        align-items: start;
+        padding-right: 0;
     }
 
     .historia-col {
@@ -450,17 +480,17 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
 
     .historia-img {
-        position: static; 
         grid-column: 2;
+        grid-row: 1;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
+       
     }
 
     .historia-img img {
-        width: 100%;
+        width: 73%;   
         height: auto;
-        max-width: 120px;
+        display: block;
     }
 }
 .mapa-burton {
@@ -473,6 +503,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: 90%
 
 }
+
 
 .mapa-burton::before {
     content: "";
@@ -670,6 +701,112 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-top: 40px;
 }
 
+@media (max-width: 768px) {
+
+    .footer-left {
+        grid-column: 1;
+    }
+
+    .footer-right {
+        grid-column: 2;
+    }
+
+    .footer-contenido {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    
+    .footer-left {
+        flex-direction: column;
+        align-items: center;
+        gap: 1px;
+    }
+
+    .footer-logo img {
+        width: 200px;
+    }
+
+    .footer-social-vertical {
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    
+    .footer-links {
+        align-items: center;
+        gap: 8px;
+        display: flex;
+        flex-direction: column;
+        margin-top: -20px;
+
+    }
+
+    .footer-links a {
+        font-size: 23px;
+    }
+
+ 
+    .footer-right {
+        grid-column: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        position: relative;
+        margin-top: -10px;
+        align-self: start;
+   
+    }
+
+    .footer-newsletter {
+        grid-column: 2;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        
+    
+    }
+
+    .footer-newsletter form {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    
+    }
+  
+    .footer-newsletter input {
+        width: 100%;
+        max-width: 120px;
+        text-align: center;
+        font-size: 14px;
+        
+    }
+
+    .footer-newsletter .btn-burton {
+        font-size: 14px;
+        padding: 8px 16px;
+        align-self: start;
+        
+    }
+
+    
+    .footer-linea {
+        width: 90%;
+        margin: 25px auto 15px auto;
+    }
+
+    .footer-legal a {
+        display: inline-block;
+        margin: 5px 8px;
+        font-size: 12px;
+    }
+
+}
 .titulo-burton {
 
     font-family: 'Special Elite', cursive;
