@@ -37,14 +37,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $sql_insertar = "INSERT INTO usuarios (email, password) 
                          VALUES ('$email', '$password_hash')";
 
-        if ($conexion->query($sql_insertar) === TRUE) {
-            header("Location: login.php");
-            exit;
+    if ($conexion->query($sql_insertar) === TRUE) {
+    $id_usuario = $conexion->insert_id;
+    $_SESSION["id_usuario"] = $id_usuario;
+    $_SESSION["email"] = $email;
+    header("Location: reservar.php");
+    exit;
+}
         } else {
             $error = "Algo oscuro ha ocurrido. Inténtalo de nuevo.";
         }
     }
-}
+
 ?>
 
 <!DOCTYPE html>
