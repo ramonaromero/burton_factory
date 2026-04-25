@@ -97,7 +97,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="registro">
             ¿Todavía no formas parte de la familia Burton?
             <br>
-            <a href="registro.php">Regístrate</a>
+            <a href="registro.php?redirect=<?php echo $_GET['redirect'] ?? ''; ?>">Regístrate</a>
+            
         </div>
 
     </div>

@@ -2,12 +2,14 @@
 session_start();
 include("../config/conexion.php");
 
+
+$redirect = $_GET['redirect'] ?? $_POST['redirect'] ?? '';
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $email = trim($_POST["email"]);
     $password = $_POST["password"]; 
 
-    
     if (
         strlen($password) < 8 ||
         !preg_match('/[A-Z]/', $password) ||
@@ -18,7 +20,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $error = "La contraseña debe tener mínimo 8 caracteres, una mayúscula, una minúscula, un número y un símbolo.";
     }
 
-    
     if (!isset($error)) {
 
         $sql_verificar = "SELECT * FROM usuarios WHERE email='$email'";
@@ -29,7 +30,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 
-    
     if (!isset($error)) {
 
         $password_hash = password_hash($password, PASSWORD_DEFAULT);
@@ -37,31 +37,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $sql_insertar = "INSERT INTO usuarios (email, password) 
                          VALUES ('$email', '$password_hash')";
 
-    if ($conexion->query($sql_insertar) === TRUE) {
-    $id_usuario = $conexion->insert_id;
-    $_SESSION["id_usuario"] = $id_usuario;
-    $_SESSION["email"] = $email;
-    header("Location: reservar.php");
-    exit;
-}
+        if ($conexion->query($sql_insertar) === TRUE) {
+
+            $id_usuario = $conexion->insert_id;
+            $_SESSION["id_usuario"] = $id_usuario;
+            $_SESSION["email"] = $email;
+
+           
+            if (!empty($redirect)) {
+                header("Location: " . $redirect);
+            } else {
+                header("Location: reservar.php");
+            }
+            exit;
+
         } else {
             $error = "Algo oscuro ha ocurrido. Inténtalo de nuevo.";
         }
     }
-
+}
 ?>
 
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">   
-    <meta charset="UTF-8">
-    <title>Registro - Burton Factory</title>
-    <link rel="stylesheet" href="../assets/css/estilos.css">
+<meta charset="UTF-8">
+<title>Registro - Burton Factory</title>
+<link rel="stylesheet" href="../assets/css/estilos.css">
 </head>
 
 <body>
-
 
 <section class="crew-section">
 
@@ -79,8 +85,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 </section>
 
-
-
 <section class="login-container">
 
     <div class="login-box">
@@ -93,13 +97,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <form method="POST" class="login-form">
 
+           
+            <input type="hidden" name="redirect" value="<?php echo htmlspecialchars($redirect); ?>">
+
             <label>Email</label>
             <input type="email" name="email" required>
 
             <label>Contraseña</label>
             <input type="password" name="password" id="password" required>
 
-            
             <p id="passwordHelp" style="font-size:12px; color:#aaa;">
                 Debe tener 8 caracteres, una mayúscula, una minúscula, un número y un símbolo
             </p>
@@ -113,13 +119,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="registro">
             ¿Ya tienes cuenta?
             <br>
-            <a href="login.php">Inicia sesión</a>
+         
+            <a href="login.php?redirect=<?php echo urlencode($redirect); ?>">Inicia sesión</a>
         </div>
 
     </div>
 
 </section>
-
 
 <script>
 const passwordInput = document.getElementById('password');
@@ -144,6 +150,7 @@ passwordInput.addEventListener('input', function() {
 
 });
 </script>
+
 <?php include("../paginas/footer.php"); ?>
 </body>
 </html>

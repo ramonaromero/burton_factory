@@ -181,7 +181,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <hr>
 
                 <p><strong>Dirección:</strong><br>
-                Calle Platería, Murcia</p>
+                Calle Platería, 1 Murcia</p>
 
                 <div style='text-align:center;margin-top:20px;'>
                  <a href='$cancelar_url'
